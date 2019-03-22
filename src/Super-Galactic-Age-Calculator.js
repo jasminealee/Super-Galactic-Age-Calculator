@@ -1,18 +1,18 @@
-export Class Birthday {
+export class Birthday {
   const (month, day, year){
     this.month = month;
     this.day = day;
     this.year = year;
   }
 
-  static birthDate(birthday)
+  static birthLifeLongDate(birthday)
   {
-  const birthDate = ["month", "day", "year"];
-   let birthDate = new date(birthday.month + 1, birthday.today, birthday.year);
+  const birthLifeLongDate = ["month", "day", "year"];
+   let birthDate = new date(birthday.month + 1, birthday.currentDay, birthday.year);
    return birthDate;
   }
 
-  state getAge(birthday)
+  static getAge(birthday)
   {
     const currentDay =  new date();
     let age = (currentDay - Birthday.birthDate(birthday));
@@ -43,4 +43,9 @@ export Class Birthday {
     return age;
   }
 
- }
+  static ageConverter(age)
+  {
+    const ageConvert = Math.Floor(age/ 365);
+    return ageConvert;
+  }
+}
