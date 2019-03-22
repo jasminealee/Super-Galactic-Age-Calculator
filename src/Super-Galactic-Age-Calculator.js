@@ -43,20 +43,4 @@ export Class Birthday {
     return age;
   }
 
-  static getLifeToSeconds(age)
-  {
-    const convertedAge = Math.floor(age * 31556952);
-    return convertedAge;
-  }
-
-  static yearsLeft(age, lifeExpectancy) {
-      const lifeExpectancy = (expectancy * 31556952);
-      const yearsLeft = expectancy - age;
-      return yearsLeft;
-  }
-  }
-
-  static getLifeExpectancy( age, lifeExpectancy)
  }
-
- static yearsPastLifeExpectance

@@ -4,7 +4,7 @@ describe('Birthday', function() {
 
 
   it('should return one year when asked age difference from now to next year', function () {
-  const today = new Date();
+  const currentDay = new Date();
   const year = today.getFullYear();
   const month = today.getMonth();
   const day = today.getDate();
