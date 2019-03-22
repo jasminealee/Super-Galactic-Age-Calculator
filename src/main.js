@@ -6,9 +6,9 @@ $(document).ready( function() {
     $('form#birthday').submit(function(event){
       event.preventDefault();
       const birthMonth = parseInt($('#birthMonth').val());
-      const birthDate = parseInt($('#birthdate').val());
+      const birthDay = parseInt($('#birthDay').val());
       const birthYear = parseInt($('#birthYear').val());
-      let birthday = new birthday(birthMonth, birthDate, birthYear);
+      let birthday = new birthday(birthMonth, birthDay, birthYear);
       let age = Birthday.getAge(birthday);
       let mercuryAge = Birthday.ageConvert(Birthday.getMercuryAge(age));
       let venusAge = Birthday.ageConvert(Birthday.getVenusAge(age));

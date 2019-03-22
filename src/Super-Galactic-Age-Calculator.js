@@ -8,14 +8,14 @@ export class Birthday {
   static birthLifeLongDate(birthday)
   {
   const birthLifeLongDate = ["month", "day", "year"];
-   let birthDate = new date(birthday.month + 1, birthday.currentDay, birthday.year);
-   return birthDate;
+   let birthDay = new date(birthday.month + 1, birthday.currentDay, birthday.year);
+   return birthDay;
   }
 
   static getAge(birthday)
   {
     const currentDay =  new date();
-    let age = (currentDay - Birthday.birthDate(birthday));
+    let age = (currentDay - Birthday.birthDay(birthday));
     return age;
   }
 
