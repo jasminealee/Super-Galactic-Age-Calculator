@@ -9,5 +9,13 @@ $(document).ready(function() {
     var l1 = 80;
 
     var adjustedBirthYear = y1 + 1;
+
+    var adjustedBirthYearDays = function() {
+      var days = 0;
+      for (var i = (m1 - 1); i < month.length; i++) {
+        days += month[i];
+      }
+      return days - d1;
+    }
   });
 });
