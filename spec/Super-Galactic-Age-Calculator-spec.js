@@ -1,9 +1,9 @@
-// import Date from "../src/Super-Galactic-Age-Calculator.js";
+import Date from "../src/Super-Galactic-Age-Calculator.js";
 
 describe('Birthday', function() {
 
-
   it('should return one year when asked age difference from now to next year', function () {
+
   const currentDay = new Date();
   const year = today.getFullYear();
   const month = today.getMonth();
@@ -30,6 +30,5 @@ describe('Birthday', function() {
 
   it('should return zero years left to live', function () {
   expect(Birthday.yearsLeft(31556952, 1)).toEqual(0);
-
-    });
   });
+});

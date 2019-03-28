@@ -1,23 +1,31 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Galactic Galaxy</title>
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>test</title>
   </head>
   <body>
-    <form id="birthdayForm">
-      <label for="birthMonth">Please enter your birth month:</label>
+    <h1>Test project</h1>
+    <form id="run">
+      <label>Please enter your day of birth:</label>
+      <input id="birthDate" type="number" required>
+      <br>
+      <label>Please enter your birth month:</label>
       <input id="birthMonth" type="number" required>
       <br>
-      <label for="birthDay">Please enter your day of birth:</label>
-      <input id="birthDay" type="number" required>
-      <br>
-      <label for="birthYear">Please enter your year of birth:</label>
+      <label>Please enter your year of birth:</label>
       <input id="birthYear" type="number" required>
       <br>
-      <label for="lifeExpectancy">Please enter the life expectancy of your demographic:</label>
-      <input id="lifeExpectancy" type="number" required>
+      <label>Life Expectance: 80 years</label>
       <br>
       <button class="button" type="submit">Submit</button>
     </form>
+    <br>
+    <p><strong>Mercury:</strong> <span id="mercury"></span></p>
+    <p><strong>Venus:</strong> <span id="venus"></span></p>
+    <p><strong>Earth:</strong> <span id="earth"></span></p>
+    <p><strong>Mars:</strong> <span id="mars"></span></p>
+    <p><strong>Jupiter:</strong> <span id="jupiter"></span></p>
   </body>
 </html>
