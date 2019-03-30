@@ -1,4 +1,4 @@
-import Date from "../src/Super-Galactic-Age-Calculator.js";
+import SuperGalacticAgeCalculator from "../src/supergalacticagecalculator.js";
 
 describe('Birthday', function() {
 
